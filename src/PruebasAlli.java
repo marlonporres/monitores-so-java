@@ -1,9 +1,7 @@
-public class Pruebas {
-
-    public static int CAPACIDAD = 10;
-
+public class PruebasAlli {
+    
     public static void main(String[] args) {
-        BufferMonitor monitor = new BufferMonitor(CAPACIDAD);
+        BufferMonitorAlli monitor = new BufferMonitorAlli();
 
         // Creamos el hilo del Productor
         Thread productor = new Thread(() -> {
@@ -32,5 +30,5 @@ public class Pruebas {
         // Arrancamos la simulación
         productor.start();
         consumidor.start();
-    }    
+    }
 }
